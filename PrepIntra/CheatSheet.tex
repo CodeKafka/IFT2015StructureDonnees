@@ -1,0 +1,305 @@
+\documentclass{report}  
+\usepackage[utopia]{mathdesign} 
+%\usepackage{amsmath,amsfonts,amsthm,amssymb,mathtools}
+
+\input{preamble.tex}
+
+\usepackage{amsmath,amsthm,mathtools}
+\usepackage{titlesec}
+\usepackage{microtype}
+\definecolor{myblue}{RGB}{0,82,155}
+
+
+
+
+%\usepackage[scr]{rsfso}
+
+%\usepackage{libertine}
+%\usepackage{mathpazo}
+%\usepackage{palatino}
+%usepackage{crimson}
+
+
+\newcommand{\faketarget}{\oplus\!\!\!\!\odot}
+\newcommand{\target}{%
+  \begin{tikzpicture}[scale=0.5]
+    \fill[black] (0,0) circle (0.1);
+    \draw (0,0) circle (0.2);
+    \draw (0,0) circle (0.3);
+  \end{tikzpicture}%
+}
+
+\usepackage[clock]{ifsym}
+
+
+\title{\Huge{Structure de données}\\{IFT2015}\\{\textbf{Introduction}}}
+\author{\huge{Franz Girardin}}
+\date{\today}
+\lstset{inputencoding=utf8/latin1}
+
+            %%%%%%%%%%%%%%%%%  Sect.                          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{helvet}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{myblue}}
+  {\filleft%
+    \begin{tikzpicture}
+    \node[
+      outer sep=0pt,
+      text width=1.5cm,
+      minimum height=2cm,
+      fill=myblue,
+      font=\color{white}\fontsize{40}{50}\selectfont,
+      align=center
+      ] (num) {\thechapter};
+    \node[
+      rotate=90,
+      anchor=south,
+      font=\color{black}\Large\normalfont
+      ] at ([xshift=-5pt]num.west) {\textls[180]{\textsc{Section}}};  
+    \end{tikzpicture}%
+  }
+  {5pt}
+  {\titlerule[2.0pt]\vskip3pt\titlerule\vskip4pt\large\normalfont}
+
+\titleformat{\section}
+  {\normalfont\scshape}{\thesection}{1em}{}
+
+
+
+\titleformat{\section}
+  {\normalfont\scshape}{\thesection}{1em}{}
+
+
+% Customizing the spacing for the chapter titles
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+%\usepackage[utopia]{mathdesign}
+% Allow hfill in math environment
+\newcommand{\specialcell}[1]{\ifmeasuring@#1\else\omit$\displaystyle#1$\ignorespaces\fi}
+
+% Allow you to do the non implication (implication barred)
+\newcommand{\notimplies}{%
+  \mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
+
+
+
+\DeclareRobustCommand{\looongrightarrow}{%
+  \DOTSB\relbar\joinrel\relbar\joinrel\relbar\joinrel\rightarrow
+}
+
+
+\title{\Huge{Interface PM}\\{IFT2905}\\{\textbf{Fuille de notes}}}
+\author{\huge{Franz Girardin}}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\pagebreak
+\tableofcontents
+\pagebreak
+\begin{multicols*}{3}
+
+
+    \footnotesize
+    %\section*{Design of everyday things}
+
+    \chapter{Introduction aux structures de données}
+    \section{Caractéristique génériques de $\mathbb{SD}$ }
+
+    \paragraph{Comment décrire une structure de données}
+    \begin{itemize}
+      \item [$\rhd$ ] \textbf{Linéaire ou \textit{non} linéaire  }  
+        \begin{itemize}
+          \item [$\blacktriangleright$ ] P. ex. 
+            \texttt{graph} vs. \texttt{arrays}    
+        \end{itemize}
+      \item [$\rhd$ ] Homogène ou non homogène  
+        \begin{itemize}
+          \item [$\blacktriangleright$ ] Indique si les données sont mê 
+            \texttt{type}  
+        \end{itemize}
+      \item [$\rhd$ ] Statique ou \textit{dynamique}  
+        \begin{itemize}
+          \item [$\blacktriangleright$ ] P. ex. taille modifiable ou 
+            \texttt{fixe}.   
+        \end{itemize} 
+    \end{itemize}
+    
+    \begin{note}{}{}
+        Plusieurs problèmes ont une complexité telle que les $\mathbb{SD}$ 
+        \textbf{base} sont inappropriées, d’où la nécessité 
+        des $\mathbb{SD}$ \textbf{abstraites}, plus adéquates.  
+    \end{note}
+
+    \paragraph{$\mathbb{SD}$ Abstaites}
+    Elles \texttt{généralise} les types de données de base et permettent 
+    l'émergence de concept sophistiqués d'\textbf{abstraction}, 
+    d'\textbf{encapsulation} et de typage. Elle possèdent 
+    \textbf{5 caractéristiques} fondamentales ($\mathbb{TUOPA}$): 
+    \begin{itemize}
+      \item [$\rhd$ ]  $\mathbb{T}$ype
+      \item [$\rhd$ ] $\mathbb{U}$tilise 
+      \item [$\rhd$ ] $\mathbb{O}$pérations
+      \item [$\rhd$ ] $\mathbb{P}$rocédures
+      \item [$\rhd$ ] $\mathbb{A}$xiomes 
+    \end{itemize}
+    
+    \section{Tableau}
+    \noindent
+    Stocke $\texttt{E}$ dans emplacement de mémoire \textcolor{red}{contigus}.
+    \begin{itemize}
+      \item [$\rhd$ ] De longueur fixe ou variable
+        \begin{itemize}
+          \item [$\blacktriangleright$ ] Autrefois : adresse brutes
+          \item [$\blacktriangleright$ ] Maintenant : $N$ \texttt{arrays} (indexation)  
+          \item [$\blacktriangleright$ ] Maintenant : \texttt{records} (champs)  
+        \end{itemize}
+    \end{itemize}
+
+    \section{Pile}
+    La propriété fondamentale d'une pile est que le seul éléement accessible 
+    et celui se trouvant au sommet de la pile. La \textbf{pile}  suit le principe 
+    \textbf{LIFO} : \textit{last in, first out}.     
+
+
+
+    \section{File}
+    La \textbf{file}   suit le principe 
+    \textbf{FIFO} : \textit{first in, first out}. Elle possède, entre autres,
+    les opération enfiler \textit{enqueue} et défiler \textit{dequeue}.      
+
+    \section{Liste}
+    Une file est le résultat de l'\textit{ordonancement} d'un nombre 
+    \textcolor{red}{dénombrable} de données où la même valeur 
+    peut apparaître plusieurs fois. 
+
+    \begin{itemize}
+      \item [$\rhd$ ] \textbf{Implémentation}  
+        \begin{itemize}
+          \item [$\blacktriangleright$ ] Liste chaînée \texttt{Linked List}  
+          \item [$\blacktriangleright$ ] Liste doubleemnt chaînée \texttt{Linked List}  
+          \item [$\blacktriangleright$ ] Liste circulaire 
+
+          \item [$\blacktriangleright$ ] Tableau \texttt{array}  
+        \end{itemize}
+    \end{itemize}
+
+
+    \begin{note}{}{}
+        Une liste chaînée stocke un ensemble d’éléments de 
+        façon linéaire. Chaque élément ou nœud d’une liste chaînée 
+        contient un \textbf{élément de données} ainsi qu’une 
+        \textbf{référence}, ou lien, 
+        vers l’élément suivant de la liste.       
+    \end{note}
+
+
+    \section{Arbre} 
+    Un arbre stocke un ensemble d’éléments sous une
+    forme \textbf{hiérarchique abstraite}. Chaque nœud est relié
+    aux autres et peut contenir plusieurs sous-valeurs
+    appelées enfants. Il s'agit d'un \texttt{graphe} avec 
+    \textbf{3 particularité fondamentales}: 
+    \begin{itemize}
+      \item [$\rhd$ ] Acyclique
+      \item [$\rhd$ ] Connexe
+      \item [$\rhd$ ] Possède une seule racine
+    \end{itemize}
+
+
+    \section{File de priorité}
+    Possède les mêmes propriété de base qu'un file, sauf que chaque 
+    élément a en plus un poids de priorité qui détermine l'ordre 
+    global des éléments. 
+
+    \section{Graphe}
+    Un graphe stocke un ensemble d’éléments de façon
+    non linéaire. Il se compose d’un ensemble fini de
+    nœuds, appelés \textbf{sommets}, et de lignes, les arêtes, qui
+    relient les sommets entre eux. Les graphes permettent 
+    notamment de représenter des systèmes réels, 
+    comme des réseaux informatiques.
+
+    \paragraph{Théorème des quatre couleurs}
+    Il existe une $4$-coloration de n'importe qu'elle pays 
+    qui a été découpé sur une carte. 
+
+
+    \chapter{Pile}
+    \paragraph{Exemples d'applications}
+    \begin{itemize}
+      \item [$\rhd$ ] Historique de pages visitées
+      \item [$\rhd$ ] Annuler une séquence de texte dans un éditeur 
+      \item [$\rhd$ ] Chaîne de méthodes appelées d'un fonction complexe
+    \end{itemize}
+
+    \paragraph{5 Opération fondamentales}
+    \begin{itemize}
+      \item [$\rhd$ ] Créer un pile 
+      \item [$\rhd$ ] Empiler 
+      \item [$\rhd$ ] Dépiler 
+      \item [$\rhd$ ] Regarder le sommet 
+      \item [$\rhd$ ] Obtenir le nombre d'éléments
+    \end{itemize}
+
+    \begin{lstlisting}
+elements[0...n-1] <-- tableau // tableau taille n
+// top <-- 0 pour assigner 0 à top on fait :
+
+push(E) :
+element[top] <-- E
+top <-- top + 1 // modifie l'index du sommet 
+
+
+//  Pour obtenir l'E au sommet, on fait : 
+
+pop() :
+retourne element[top] 
+top <-- top -1 //decremente la valeur du sommet
+x <-- element[top + 1] // enregistre val sommet  
+element[top + 1] <-- null
+    \end{lstlisting}
+
+
+    \paragraph{Conventions d'écriture}
+
+    \begin{itemize}
+      \item [$\rhd$ ] \textbf{IN}fixé : \texttt{gauche \textcolor{red}{racine} droite}   
+        \begin{itemize}
+          \item [$\blacktriangleright$ ] 
+            $5 \; \textcolor{red}{ - } \;   6 \textcolor{red}{\times} 7
+            \leftrightarrow (5 - 6) \times 7 $  
+        \end{itemize}
+      \item [$\rhd$ ] \textbf{POST}fixé : 
+        \texttt{gauche droite \textcolor{red}{racine}}   
+        \begin{itemize}
+          \item [$\blacktriangleright$ ] 
+            $56 \textcolor{red}{ - }   7 \textcolor{red}{\times} 
+            \leftrightarrow (56-) \; 7\times$  
+        \end{itemize}
+      \item [$\rhd$ ] \textbf{PRÉ}fixé : \texttt{\textcolor{red}{racine} gauche droite}  
+        \begin{itemize}
+          \item [$\blacktriangleright$ ] 
+            $\times \textcolor{red}{ - }567 \textcolor{red}{\times} 
+            \leftrightarrow \times (-56) \; 7$  
+        \end{itemize}
+    \end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    \end{multicols*}
+
+
+\end{document}
+

@@ -1,0 +1,177 @@
+\documentclass{report}
+\input{preamble.tex}
+\usepackage{circuitikz}
+\usepackage[scr]{rsfso}
+
+%===============================
+\usetikzlibrary{circuits.ee.IEC}
+\usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc}
+\newcommand{\faketarget}{\oplus\!\!\!\!\odot}
+
+
+
+
+\title{\Huge{Architecture des ordinateurs}\\{IFT2015}\\{Démonstration 2}\\{\textbf{Piles}}}
+\author{\huge{Franz Girardin}}
+\date{\today}
+\lstset{inputencoding=utf8/latin1}
+
+            %%%%%%%%%%%%%%%%%  Sect.       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+\begin{document}
+\maketitle
+
+\pagebreak
+
+\pagebreak
+\begin{multicols*}{3}
+  
+
+  \footnotesize
+
+
+  \paragraph{Exercice 1}  
+  Supposons qu'une pile S initialement vide ait effectué 
+  un   total de 25
+  opérations push, 12 opérations top et 10 opérations 
+  pop, dont 3 ont renvoyé null pour indiquer une 
+  pile vide. Quelle est la taille actuelle de S ?
+
+  \paragraph{} 
+  Si les \textbf{3} opérations \texttt{pop()} effectuées
+  ont retourné une valeur \texttt{null}, cela indique 
+  qu'elles ont été effectuées en premier. Les 
+  opération \texttt{top()} n'affectent pas la taille 
+  de la pile. Et les \textbf{25} opérations 
+  \texttt{push()} et 7 opération \textbf{pop()}
+  auraient pu être effectuées dans n'importe quel 
+  ordre. La pile contient alors 
+  \begin{align*}
+        n(\texttt{ push()}  ) - n(\texttt{ pop() }  )
+        = 25 - 7 = 18
+  \end{align*}
+
+  \paragraph{Exercice 2}
+
+
+  Supposons qu'une pile S initialement vide ait effectué 
+  dans l’ordre les opérations suivantes : 
+  1 pop ; 3 push ; 1 len ; 2 pop ; 1 isEmpty ; 5 push ; 
+  2 top ; 7 pop ; 2 push ; 3 top. Quelle est la taille
+  actuelle de S ?
+
+
+
+  \begin{table}[H]
+    \caption {}
+
+    \begin{center}
+      \renewcommand{\arraystretch}{1.5}
+      \fontfamily{flr}\selectfont
+      \footnotesize
+          \begin{tabular}{|l|l|}
+          \arrayrulecolor{blue}\hline
+          \rowcolor{lightBlue}
+          \textcolor{myb}{Méthode} & 
+          \textcolor{myb}{Taille fin op.}  
+          \\
+          \hline
+          \arrayrulecolor{black}
+          \texttt{pop()} & 0
+          \\
+          \hline
+          $3 \times \texttt{push(e)}$  & 3 
+          \\
+          \hline
+          \texttt{len()} & 3  
+          \\ 
+          \hline 
+          $2 \times \texttt{pop()}$ & 1  
+          \\ 
+          \hline 
+          \texttt{isEmpty()} & 1  
+          \\ 
+          \hline 
+          $ 5 \times \texttt{push()}$ & 6  
+          \\ 
+          \hline 
+          $2 \times \texttt{top()}$  & 6  
+          \\ 
+          \hline 
+          $7 \times \texttt{pop()}$  & 0  
+          \\ 
+          \hline 
+          $2 \times \texttt{push()}$  & 2  
+          \\ 
+          \hline 
+          $3 \times \texttt{top()}$  & 2  
+          \\ 
+          \hline 
+          $2 \times \texttt{top()}$  & 2 
+          \\ 
+          \hline 
+              \end{tabular}
+  \end{center}
+  \end{table}
+
+  \paragraph{Exercice 3 }
+  Quelles valeurs sont renvoyées lors de la série suivante d'opérations 
+  de pile? push(5), push(3), pop(), push(2), push(8), pop(), pop(), 
+  push(9), push(1), pop(), push(7), push(6), pop(), pop(), push(4), 
+  pop(), pop().
+
+
+  \paragraph{} 
+
+  \begin{table}[H]
+    \caption {}
+
+    \begin{center}
+      \renewcommand{\arraystretch}{1.5}
+      \fontfamily{flr}\selectfont
+      \footnotesize
+          \begin{tabular}{|l|l|l|}
+          \arrayrulecolor{blue}\hline
+          \rowcolor{lightBlue}
+          \textcolor{myb}{Méthode} & 
+          \textcolor{myb}{Val. retour} & \textcolor{myb}{Contenu pile}    
+          \\
+          \hline
+          \arrayrulecolor{black}
+          \texttt{push(5)} & rien & $\{ 5\}$
+          \\
+          \hline
+          \texttt{push(3)} & rien & $\{ 3, 5\}$
+          \\
+          \hline
+          \texttt{pop()} & 3 & $\{ 5 \}$
+          \\ 
+          \hline 
+          \texttt{push(2)} & rien & $\{ 2, 5 \}$
+          \\ 
+          \hline 
+          \texttt{push(8)} & rien & $\{ 8, 2, 5 \}$
+          \\
+          \hline 
+          \texttt{pop()} & 8 & $\{ 2, 5 \}$
+          \\ 
+          \hline 
+          \texttt{pop()} & 2 & $\{ 5 \}$
+          \\ 
+          \hline 
+          \texttt{psuh(9)} & rien & $\{ 9, 5 \}$
+         \\ 
+          \hline 
+          \end{tabular}
+  \end{center}
+  \end{table}
+
+\end{multicols*}
+\end{document}
+

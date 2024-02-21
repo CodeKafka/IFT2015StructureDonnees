@@ -1,0 +1,18 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction aux structures de données}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Caractéristique génériques de $\mdmathbb {SD}$ }{2}{section.1.1}%
+\contentsline {paragraph}{Comment décrire une structure de données}{2}{paragraph*.1}%
+\contentsline {paragraph}{$\mdmathbb {SD}$ Abstaites}{2}{paragraph*.2}%
+\contentsline {section}{\numberline {1.2}Tableau}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Pile}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}File}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Liste}{2}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Arbre}{2}{section.1.6}%
+\contentsline {section}{\numberline {1.7}File de priorité}{2}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Graphe}{2}{section.1.8}%
+\contentsline {paragraph}{Théorème des quatre couleurs}{2}{paragraph*.3}%
+\contentsline {chapter}{\numberline {2}Pile}{2}{chapter.2}%
+\contentsline {paragraph}{Exemples d'applications}{2}{paragraph*.4}%
+\contentsline {paragraph}{5 Opération fondamentales}{2}{paragraph*.5}%
+\contentsline {paragraph}{Conventions d'écriture}{2}{paragraph*.6}%
+\contentsfinish 
