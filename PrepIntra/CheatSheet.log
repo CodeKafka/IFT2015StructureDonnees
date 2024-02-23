@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.25)  20 FEB 2024 23:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.25)  21 FEB 2024 18:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1784,24 +1784,194 @@ Overfull \hbox (20.92337pt too wide) in paragraph at lines 260--261
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[2{/home/cryptopsy/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/home/cryptopsy/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/home/cryptopsy/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] (./CheatSheet.aux)
+[2{/home/cryptopsy/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/home/cryptopsy/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/home/cryptopsy/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] (/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 330.
+ (/home/cryptopsy/texmf/tex/generic/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Character `texttrademark ' is missing
+(microtype)             in font `TS1/lmtt/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Chapitre 3.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 349.
+(/home/cryptopsy/texmf/tex/generic/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 349.
+ (/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+Overfull \hbox (33.54791pt too wide) in paragraph at lines 423--424
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[3{/home/cryptopsy/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/home/cryptopsy/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] (/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+Overfull \hbox (54.54785pt too wide) in paragraph at lines 467--468
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+(/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+Overfull \hbox (10.17282pt too wide) in paragraph at lines 503--504
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.54782pt too wide) in paragraph at lines 504--505
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<ExempleListeChaine.png, id=201, 1043.9pt x 618.31pt>
+File: ExempleListeChaine.png Graphic file (type png)
+<use ExempleListeChaine.png>
+Package pdftex.def Info: ExempleListeChaine.png  used on input line 522.
+(pdftex.def)             Requested size: 194.77136pt x 115.35732pt.
+
+Overfull \hbox (15.94473pt too wide) in paragraph at lines 522--523
+ [] 
+ []
+
+<ListeSChainee.png, id=202, 1039.885pt x 246.9225pt>
+File: ListeSChainee.png Graphic file (type png)
+<use ListeSChainee.png>
+Package pdftex.def Info: ListeSChainee.png  used on input line 542.
+(pdftex.def)             Requested size: 183.63937pt x 43.60391pt.
+
+Overfull \hbox (4.81274pt too wide) in paragraph at lines 542--543
+ [] 
+ []
+
+(/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+Overfull \hbox (19.62279pt too wide) in paragraph at lines 549--550
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (20.67279pt too wide) in paragraph at lines 550--551
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (67.92265pt too wide) in paragraph at lines 551--554
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.4228pt too wide) in paragraph at lines 577--579
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+(/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+Overfull \hbox (10.17282pt too wide) in paragraph at lines 598--599
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.62279pt too wide) in paragraph at lines 599--600
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.37268pt too wide) in paragraph at lines 610--611
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.37268pt too wide) in paragraph at lines 611--612
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[4 <./ExempleListeChaine.png> <./ListeSChainee.png>]
+Overfull \hbox (18.04779pt too wide) in paragraph at lines 627--628
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.92284pt too wide) in paragraph at lines 628--629
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Chapitre 4.
+(/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+<ListeGen2.png, id=291, 594.22pt x 382.42876pt>
+File: ListeGen2.png Graphic file (type png)
+<use ListeGen2.png>
+Package pdftex.def Info: ListeGen2.png  used on input line 673.
+(pdftex.def)             Requested size: 183.63937pt x 118.18405pt.
+
+Overfull \hbox (4.81274pt too wide) in paragraph at lines 673--674
+ [] 
+ []
+
+<Listegen.png, id=292, 749.80125pt x 277.035pt>
+File: Listegen.png Graphic file (type png)
+<use Listegen.png>
+Package pdftex.def Info: Listegen.png  used on input line 681.
+(pdftex.def)             Requested size: 183.63937pt x 67.8509pt.
+
+Overfull \hbox (4.81274pt too wide) in paragraph at lines 681--682
+ [] 
+ []
+
+Chapitre 5.
+<FileSurTableau.png, id=293, 775.89874pt x 246.9225pt>
+File: FileSurTableau.png Graphic file (type png)
+<use FileSurTableau.png>
+Package pdftex.def Info: FileSurTableau.png  used on input line 702.
+(pdftex.def)             Requested size: 183.63937pt x 58.44124pt.
+
+Overfull \hbox (4.81274pt too wide) in paragraph at lines 702--703
+ [] 
+ []
+
+(/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+) (/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+Overfull \hbox (25.92278pt too wide) in paragraph at lines 750--751
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[5 <./ListeGen2.png> <./Listegen.png> <./FileSurTableau.png>] (./CheatSheet.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 56074 strings out of 477956
- 1248524 string characters out of 5838909
- 1976724 words of memory out of 5000000
- 75116 multiletter control sequences out of 15000+600000
- 632893 words of font info for 170 fonts, out of 8000000 for 9000
+ 56536 strings out of 477956
+ 1256336 string characters out of 5838909
+ 2008724 words of memory out of 5000000
+ 75273 multiletter control sequences out of 15000+600000
+ 646098 words of font info for 203 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 105i,8n,120p,1007b,1949s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/cryptopsy/texmf/fonts/type1/public/lm/lmb10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmbo10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmmi8.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr12.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr17.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr8.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr9.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmri8.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmsy8.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmtt8.pfb></home/cryptopsy/texmf/fonts/type1/public/mathdesign/mdput/md-utrma.pfb>
-Output written on CheatSheet.pdf (3 pages, 262578 bytes).
+ 105i,9n,120p,1007b,2610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/cryptopsy/texmf/fonts/type1/public/lm/lmb10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmbo10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmex10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmmi10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmmi7.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmmi8.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr12.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr17.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr7.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr8.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmr9.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmri10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmri8.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmss10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmssbx10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmsy10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmsy7.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmsy8.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmtk10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmtt10.pfb></home/cryptopsy/texmf/fonts/type1/public/lm/lmtt8.pfb></home/cryptopsy/texmf/fonts/type1/public/mathdesign/mdput/md-utrma.pfb>
+Output written on CheatSheet.pdf (6 pages, 685168 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 61189 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 591 PDF objects out of 1000 (max. 8388607)
+ 479 compressed objects within 5 object streams
+ 248 named destinations out of 1000 (max. 500000)
+ 65874 words of extra memory for PDF output out of 74296 (max. 10000000)
 

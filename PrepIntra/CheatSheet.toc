@@ -15,4 +15,22 @@
 \contentsline {paragraph}{Exemples d'applications}{2}{paragraph*.4}%
 \contentsline {paragraph}{5 Opération fondamentales}{2}{paragraph*.5}%
 \contentsline {paragraph}{Conventions d'écriture}{2}{paragraph*.6}%
+\contentsline {paragraph}{Avantage de RPN}{2}{paragraph*.7}%
+\contentsline {paragraph}{Méthodtologie RPN pour \texttt {parse} une opératon}{2}{paragraph*.8}%
+\contentsline {paragraph}{Algorithme d'évaluation d'opérations infixée}{3}{paragraph*.9}%
+\contentsline {chapter}{\numberline {3}Listes}{3}{chapter.3}%
+\contentsline {paragraph}{6 Opération fondamentales des listes}{3}{paragraph*.10}%
+\contentsline {paragraph}{Rappel}{3}{paragraph*.11}%
+\contentsline {paragraph}{Opération d'insertion}{3}{paragraph*.12}%
+\contentsline {paragraph}{Opération de suppression}{4}{paragraph*.13}%
+\contentsline {paragraph}{Performance}{4}{paragraph*.14}%
+\contentsline {paragraph}{Agradir un tableau dynamique}{4}{paragraph*.15}%
+\contentsline {section}{\numberline {3.1}Liste chaîné}{4}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Liste doublement chaînée}{4}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Liste généralisée}{5}{chapter.4}%
+\contentsline {paragraph}{Liste généralisée 1}{5}{paragraph*.18}%
+\contentsline {paragraph}{Liste généralisée 2}{5}{paragraph*.19}%
+\contentsline {paragraph}{Liste généralisée 3}{5}{paragraph*.21}%
+\contentsline {chapter}{\numberline {5}File}{5}{chapter.5}%
+\contentsline {paragraph}{Variante}{5}{paragraph*.24}%
 \contentsfinish 
